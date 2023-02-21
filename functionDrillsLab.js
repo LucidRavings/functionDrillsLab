@@ -295,8 +295,10 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
-
-
+function shouting(str){
+return str.toUpperCase()
+}
+console.log(shouting(sampleString))
 ////////////////// PROBLEM 18 ////////////////////
 /*
   Write a function called emailCheck that takes in
@@ -308,6 +310,18 @@ let sampleString = "Hi, my name is Kylo."
   return 'must provide a valid email address'
 */
 
+// CODE HERE
+function emailCheck(email){
+  String(email)
+  email.trim()
+  let verify = email.split("")
+  if (verify.includes("@")){
+    return console.log("email verified")
+  }else{
+    return console.log("must provide a valid email address")
+  }
+}
+console.log(emailCheck("example@email.com"))
 ////////////////// PROBLEM 19 ////////////////////
 /*
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
